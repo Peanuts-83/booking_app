@@ -1,0 +1,6 @@
+[submodule "booking_back"]
+	path = booking_back
+	url = git@github.com:Peanuts-83/booking_back.git
+[submodule "booking_front"]
+	path = booking_front
+	url = git@github.com:Peanuts-83/booking_front.git

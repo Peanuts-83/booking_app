@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "env": {
+                "DB_URL": "mariadb+mariadbconnector://myuser:myuserpassword@192.168.168.2:3306/mydatabase"
+            },
+            "envFile": "${workspaceFolder}/booking_back/.env",
+            "justMyCode": true,
+            "module": "uvicorn",
+            "args": [
+                "booking_back/src/app/main:app",
+                "--reload"
+            ],
+            "jinja": true
+        }
+    ]
+}
